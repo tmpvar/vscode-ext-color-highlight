@@ -33,7 +33,9 @@ function findHex(text, useARGB) {
 
     try {
       let color;
-      if (useARGB == true) {
+
+      const firstCharIsHash = matchedColor[0] == '#'
+      if (useARGB == true && !firstCharIsHash) {
         let alphaInt = 1;
         if (match[2].length == 8) {
           alphaInt =
@@ -52,7 +54,7 @@ function findHex(text, useARGB) {
         end,
         color,
       });
-    } catch (e) {}
+    } catch (e) { }
 
     match = colorHex.exec(text);
   }
