@@ -8,6 +8,13 @@ In VSC press Ctrl+Shift+P (Cmd+Shift+P on Mac) then type ">ext install", hit ent
 
 Still confused? Click "Get Started" above.
 
+### Dev
+
+```
+npm install -g vsce
+code --install-extension color-highlight-2.6.0.vsix
+```
+
 ## Questionnaire
 
 Please answer the questions in this questionnaire. Your feedback is very valuable and will help me improve this extension.
